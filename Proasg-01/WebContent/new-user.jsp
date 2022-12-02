@@ -45,30 +45,22 @@
 		margin-left: 150px;
 	}
 	
-	.btn-group a {
-  			background-color: #cb4bf2; 
-  			border: 1px solid blue; 
-  			color: black; 
-  			padding: 20px 48px; 
-  			cursor: pointer; 
-  			float: left; 
+	.styled {
+    		border: 1;
+    		line-height: 4.5;
+    		padding: 0 20px;
+    		font-size: 1rem;
+    		text-align: center;
+    		color: #00008B;
+    		border-radius: 10px;
+    		background-color: #E5E4E2;
+    
+		}
+		
+		button {
   			width: 50%;
-		}
-
-		.btn-group a:not(:last-child) {
-  			border-right: none; /* Prevent double borders */
-		}
-
-		/* Clear floats (clearfix hack) */
-		.btn-group:after {
-  			content: "";
-  			clear: both;
-  			display: table;
-		}
-
-		/* Add a background color on hover */
-		.btn-group a:hover {
-  			background-color: yellow;
+  			margin: 5px;
+  			background-color: #7DF9FF;
 		}
 		
 		.section{
@@ -113,16 +105,17 @@
 			<input type="file" id="photo" name="photo" accept="image/jpeg, image/png, image/jpg">
 			
 			<br><br><br>
-			<input type="submit" value="Submit">
+			<input type="submit" value="Submit" style="height:50px; width:150px">
 			
 		</div>
 	</form>
 	
 	<br/>
 		
-		<div class="btn-group">
-			<a href="front-page.jsp">Back to frontpage</a>
-		</div>
+		<a href="front-page.jsp" class="container-login100-form-btn m-t-17">
+            <button type="submit" class="favorite styled">
+            Back to Front Page
+            </button></a><br><br>
 		</div>
 	
 	<%@ include file = "footer.html" %>

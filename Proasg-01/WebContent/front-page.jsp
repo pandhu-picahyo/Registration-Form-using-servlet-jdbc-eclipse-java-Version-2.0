@@ -20,30 +20,22 @@
   				border: none;
 			}
 		
-		.btn-group a {
-  			background-color: #cb4bf2; 
-  			border: 1px solid blue; 
-  			color: black; 
-  			padding: 20px 48px; 
-  			cursor: pointer; 
-  			float: left; 
-  			width: 50%;
+		.styled {
+    		border: 1;
+    		line-height: 4.5;
+    		padding: 0 20px;
+    		font-size: 1rem;
+    		text-align: center;
+    		color: #00008B;
+    		border-radius: 10px;
+    		background-color: #E5E4E2;
+    
 		}
-
-		.btn-group a:not(:last-child) {
-  			border-right: none; /* Prevent double borders */
-		}
-
-		/* Clear floats (clearfix hack) */
-		.btn-group:after {
-  			content: "";
-  			clear: both;
-  			display: table;
-		}
-
-		/* Add a background color on hover */
-		.btn-group a:hover {
-  			background-color: yellow;
+		
+		button {
+  			width: 100%;
+  			margin: 5px;
+  			background-color: #7DF9FF;
 		}
 		
 		.section{
@@ -58,13 +50,15 @@
 <%@ include file = "header.html" %>
 	
 		<div class="section">
-		<div class="btn-group">
-			<a href="new-user.jsp">Add New Records</a>
-		</div>
-		<br><br>
-		<div class="btn-group">
-			<a href="View_Data">View All Records</a>
-		</div>
+		<a href="new-user.jsp" class="container-login100-form-btn m-t-17">
+            <button type="submit" class="favorite styled">
+            Add New Records
+            </button></a><br><br>
+           
+        <a href="View_Data" class="container-login100-form-btn m-t-17">
+            <button type="submit" class="favorite styled">
+            View All Records
+            </button></a><br><br>
 		</div>
 
 <%@ include file = "footer.html" %>

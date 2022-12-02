@@ -37,16 +37,6 @@ public class Edit_Data extends HttpServlet {
         String city = request.getParameter("city");
         String country = request.getParameter("country");
         String education = request.getParameter("education");
-        
-          
-        Emp e=new Emp();  
-        e.setName(name);
-        e.setEmail(email);
-        e.setAddress(address);
-        e.setPhone(phone);
-        e.setCity(city);
-        e.setCountry(country);
-        e.setEducation(education);
      
         Connection con=null;  
         try
@@ -59,19 +49,19 @@ public class Edit_Data extends HttpServlet {
                     + "address=?, phone=?, city=?, country=?, "
                     + "education=? where id=?");  
                     
-            ps.setString(1, e.getName());  
-            ps.setString(2, e.getEmail());
-            ps.setString(3, e.getAddress());
-            ps.setString(4, e.getPhone());
-            ps.setString(5, e.getCity());
-            ps.setString(6, e.getCountry());
-            ps.setString(7, e.getEducation());
-                      
+            ps.setString(1, name);  
+            ps.setString(2, email);
+            ps.setString(3, address);
+            ps.setString(4, phone);
+            ps.setString(5, city);
+            ps.setString(6, country);
+            ps.setString(7, education);
+            
             ps.executeUpdate();  
             ps.close();
             con.close();
             
-            request.getRequestDispatcher("front-page.jsp").include(request, response);
+            response.sendRedirect("front-page.jsp");
         }
         catch(Exception ex)
         {

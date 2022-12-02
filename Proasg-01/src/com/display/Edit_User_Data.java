@@ -29,8 +29,7 @@ public class Edit_User_Data extends HttpServlet {
         Emp e = Emp_Dao.getEmployeeById(id);  
           
         out.print("<form action='./editdata' method='post'>");  
-        out.print("<table class='table table-hover table-bordered'>");  
-        out.print("<tr><td></td><td><input type='hidden' name='id' value='"+e.getId()+"'/></td></tr>");  
+        out.print("<table class='table table-hover table-bordered'>");    
         out.print("<tr><td>Name:</td><td><input type='text' name='name' value='"+e.getName()+"'/></td></tr>");
         out.print("<tr><td>Email:</td><td><input type='email' name='email' value='"+e.getEmail()+"'/></td></tr>");
         out.print("<tr><td>Address:</td><td><input type='address' name='address' value='"+e.getAddress()+"'/></td></tr>");
