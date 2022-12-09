@@ -19,12 +19,12 @@
  
    <servlet>
     <description></description>
-    <display-name>Edit_Data</display-name>
-    <servlet-name>Edit_Data</servlet-name>
-    <servlet-class>com.control.Edit_Data</servlet-class>
+    <display-name>Edit_Dao</display-name>
+    <servlet-name>Edit_Dao</servlet-name>
+    <servlet-class>com.dao.Edit_Dao</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>Edit_Data</servlet-name>
+    <servlet-name>Edit_Dao</servlet-name>
     <url-pattern>/editdata</url-pattern>
   </servlet-mapping>
 </web-app>

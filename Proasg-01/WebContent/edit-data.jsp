@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+<%@ page import="com.dao.Edit_Dao" %>
+<%@ page import="com.info.Emp" %>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -45,30 +48,22 @@
 		margin-left: 150px;
 	}
 	
-	.btn-group a {
-  			background-color: #cb4bf2; 
-  			border: 1px solid blue; 
-  			color: black; 
-  			padding: 20px 48px; 
-  			cursor: pointer; 
-  			float: left; 
+	.styled {
+    		border: 1;
+    		line-height: 4.5;
+    		padding: 0 20px;
+    		font-size: 1rem;
+    		text-align: center;
+    		color: #00008B;
+    		border-radius: 10px;
+    		background-color: #E5E4E2;
+    
+		}
+		
+		button {
   			width: 50%;
-		}
-
-		.btn-group a:not(:last-child) {
-  			border-right: none; /* Prevent double borders */
-		}
-
-		/* Clear floats (clearfix hack) */
-		.btn-group:after {
-  			content: "";
-  			clear: both;
-  			display: table;
-		}
-
-		/* Add a background color on hover */
-		.btn-group a:hover {
-  			background-color: yellow;
+  			margin: 5px;
+  			background-color: #7DF9FF;
 		}
 		
 		.section{
@@ -84,45 +79,48 @@
 	<div class="section">
 	<h3 align="center">Add New User</h3>
 
+	<%  
+		String id=request.getParameter("id");  
+		Emp d=Edit_Dao.getRecordById(Integer.parseInt(id));  
+	%>
 	
-	<form action="./editdata" method="post" enctype="multipart/form-data">
+	<form action="./editdata" method="post">
 		<div class="container">	
+			<input type=hidden name="id" value="<%=d.getId() %>">
 			<label for="name">Name</label>
-			<input type="text" id="name" name="name" placeholder="Your Name ....">
+			<input type="text" id="name" name="name" placeholder="<%=d.getName() %>">
 			<br>
 			<label for="email">Email</label>
-			<input type="text" id="email" name="email" placeholder="Your Email ....">
+			<input type="text" id="email" name="email" placeholder="<%=d.getEmail() %>">
 			<br>
 			<label for="address">Address</label>
-			<input type="text" id="address" name="address" placeholder="Your Address ....">
+			<input type="text" id="address" name="address" placeholder="<%=d.getAddress() %>">
 			<br>
 			<label for="phone">Phone</label>
-			<input type="text" id="phone" name="phone" placeholder="Your Phone ....">
+			<input type="text" id="phone" name="phone" placeholder="<%=d.getPhone() %>">
 			<br>
 			<label for="city">City</label>
-			<input type="text" id="city" name="city" placeholder="Your City ....">
+			<input type="text" id="city" name="city" placeholder="<%=d.getCity() %>">
 			<br>
 			<label for="country">Country</label>
-			<input type="text" id="country" name="country" placeholder="Your Country ....">
+			<input type="text" id="country" name="country" placeholder="<%=d.getCountry() %>">
 			<br>
 			<label for="education">Education</label>
-			<input type="text" id="education" name="education" placeholder="Your Last Education ....">
-			<br>
-			<br>
-			<label for="photo">Photo</label>
-			<input type="file" id="photo" name="photo" accept="image/jpeg, image/png, image/jpg">
+			<input type="text" id="education" name="education" placeholder="<%=d.getEducation() %>">
 			
 			<br><br><br>
-			<input type="submit" value="Submit">
+			<input type="submit" value="Submit" style="height:50px; width:150px">
 			
 		</div>
 	</form>
 	
 	<br/>
 		
-		<div class="btn-group">
-			<a href="front-page.jsp">Back to frontpage</a>
-		</div>
+		<a href="front-page.jsp" class="container-login100-form-btn m-t-17">
+            <button type="submit" class="favorite styled">
+            Back to Front Page
+            </button></a><br><br>
+		
 		</div>
 	
 	<%@ include file = "footer.html" %>

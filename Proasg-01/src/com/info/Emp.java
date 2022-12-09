@@ -9,8 +9,8 @@ import javax.servlet.http.Part;
 public class Emp 
 {
 	
-	private int id;
-	private String name, email, address, phone, city, country, education;
+	protected int id;
+	protected String name, email, address, phone, city, country, education;
 	Date date;
 	Blob photo;
 	

@@ -47,7 +47,7 @@ public class Emp_Dao {
             ps.setString(6, e.getCity());
             ps.setString(7, e.getCountry());
             ps.setString(8, e.getEducation());
-			ps.setInt(10, e.getId());  
+			ps.setInt(9, e.getId());  
               
             status=ps.executeUpdate();  
               

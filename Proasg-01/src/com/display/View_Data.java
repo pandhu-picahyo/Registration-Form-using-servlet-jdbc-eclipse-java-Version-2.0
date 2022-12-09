@@ -50,7 +50,7 @@ public class View_Data extends HttpServlet {
         		  		+ "<td>"+e.getDate()+"</td>"
         		  		+ "<td>"+e.getCity()+"</td>"
         		  		+ "<td><a href='Detail_Data?id="+e.getId()+"'><button type=\"button\">Status</button></a></td>"
-        		  		+ "<td><a href='Edit_User_Data?id="+e.getId()+"'><button type=\"button\">Edit</button></a></td>"
+        		  		+ "<td><a href='edit-data.jsp?id="+e.getId()+"'><button type=\"button\">Edit</button></a></td>"
         		  		+ "<td><a href='Delete_Data?id="+e.getId()+"'><button type=\"button\">Delete</button></a></td></tr>"); 
          
         }  
