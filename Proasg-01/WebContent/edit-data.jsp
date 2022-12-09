@@ -77,7 +77,7 @@
 	<%@ include file = "header.html" %>
 	<br><br>
 	<div class="section">
-	<h3 align="center">Add New User</h3>
+	<h3 align="center">Edit Data User</h3>
 
 	<%  
 		String id=request.getParameter("id");  
