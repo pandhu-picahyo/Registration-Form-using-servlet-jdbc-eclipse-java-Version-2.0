@@ -19,3 +19,7 @@ Version 2.2
 - make link from View_Data.java and Detail_Data.java to edit-data.jsp
 - Removing Edit_User_Data.java
 - Editing Readme.md
+
+Version 2.21
+- change Add New User to Edit Data User at edit-data.jsp
+- updateing Readme.md and inserting jpg file to screenshoot folder 
