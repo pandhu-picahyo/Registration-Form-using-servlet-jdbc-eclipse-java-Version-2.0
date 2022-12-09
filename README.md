@@ -1,25 +1,39 @@
 # Registration-Form-using-servlet-jdbc-eclipse-java-Version-2.0
 
-This is version 2.0, In this web aplication (localhost) there is front page, registration page, view data record and view detail record
+This is version 2.2, In this web aplication (localhost) there is front page, registration page, view data record and view detail record
 
 To run this program, first you need to make SQL database with name Assignment1, and run com.tables.Create_Table
 
 Special thanks to Asian technology Hub and PT Asiatek Solusi Indonesia
 
+You can see version update log at https://github.com/pandhu-picahyo/Registration-Form-using-servlet-jdbc-eclipse-java-Version-2.0/blob/master/Proasg-01/Version.md
+
 # Front Page
-![Task 1 Front Page Assignment Project 1_page-0001](https://user-images.githubusercontent.com/117777807/204096085-d8008775-40c8-4e93-9ffb-ba5dd6cec297.jpg)
+![1 front page_page-0001](https://user-images.githubusercontent.com/117777807/206630293-23414024-082f-4b36-b7e2-049d24850fd3.jpg)
 
-# Registration Page
-![Task 2 Registration Page Assignment Project 1_page-0001](https://user-images.githubusercontent.com/117777807/204096099-bd3e821b-786c-4c65-bf14-d15a5f9eb78d.jpg)
+# Add New User Page
+![2 registration page form_page-0001](https://user-images.githubusercontent.com/117777807/206630284-cf3c5385-a4cc-46d2-9eeb-184d584742cf.jpg)
 
-# View All Record Data
-![Task 3 View_Data Assignment Project 1_page-0001](https://user-images.githubusercontent.com/117777807/204096113-d5d889d6-4878-4373-ac1c-11952e0e4c78.jpg)
+# Registration Form with data
+![3 registration page with data_page-0001](https://user-images.githubusercontent.com/117777807/206630279-358f8af7-6927-4ed5-9f8f-0fd69cd4a6e2.jpg)
 
-# View Detail user Data
-![Task 4 Detail_Data Assignment Project 1_page-0001](https://user-images.githubusercontent.com/117777807/204096129-9c96fad5-3b6f-4aaf-8de9-490d71b80d86.jpg)
+# View All Data
+![4 view all data_page-0001](https://user-images.githubusercontent.com/117777807/206630263-54b310f8-6610-4c5f-9b9d-e3aa7afeee79.jpg)
 
-# Save data as PDF
-![Task 5 Save as PDF Assignment Project 1](https://user-images.githubusercontent.com/117777807/204096138-93a264d9-b969-4ce9-965f-8231a142c40b.JPG)
+# View All Data After Deleting data ID no 7
+![5 view all data after deleting data_page-0001](https://user-images.githubusercontent.com/117777807/206630255-1e231e8f-36a7-4350-ace3-649acc7ddb1b.jpg)
 
-# Edit Data
-![Task 6 Edit_Data Assignment Project 1_page-0001](https://user-images.githubusercontent.com/117777807/204096145-dc772f64-9519-4fac-b914-a5b406089943.jpg)
+# Edit Data form
+![6 edit data 1_page-0001](https://user-images.githubusercontent.com/117777807/206630247-ded3eede-5690-447b-913e-9f40dc34a6e1.jpg)
+
+# Editing the Data
+![7 edit data with new data_page-0001](https://user-images.githubusercontent.com/117777807/206630236-f3935f00-1fd4-49d2-a22d-b8a30b881d8c.jpg)
+
+# View All Data After editting
+![8 view data after edit_page-0001](https://user-images.githubusercontent.com/117777807/206630230-29d34fa6-5b17-4fa2-a559-53abb70d7385.jpg)
+
+# Status User
+![9 status data_page-0001](https://user-images.githubusercontent.com/117777807/206630223-19c8b8b5-f778-4792-aff4-7db72e8f3d36.jpg)
+
+# Save to PDF
+![10 status save as PDF](https://user-images.githubusercontent.com/117777807/206630209-7061db62-aaf6-4e1b-96ac-7138764240e2.JPG)
