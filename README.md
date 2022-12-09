@@ -24,10 +24,7 @@ You can see version update log at https://github.com/pandhu-picahyo/Registration
 ![5 view all data after deleting data_page-0001](https://user-images.githubusercontent.com/117777807/206630255-1e231e8f-36a7-4350-ace3-649acc7ddb1b.jpg)
 
 # Edit Data form
-![6 edit data 1_page-0001](https://user-images.githubusercontent.com/117777807/206630247-ded3eede-5690-447b-913e-9f40dc34a6e1.jpg)
-
-# Editing the Data
-![7 edit data with new data_page-0001](https://user-images.githubusercontent.com/117777807/206630236-f3935f00-1fd4-49d2-a22d-b8a30b881d8c.jpg)
+![6 edit data form](https://user-images.githubusercontent.com/117777807/206683821-80d204fc-0c7d-4268-8879-615879003307.jpg)
 
 # View All Data After editting
 ![8 view data after edit_page-0001](https://user-images.githubusercontent.com/117777807/206630230-29d34fa6-5b17-4fa2-a559-53abb70d7385.jpg)
